@@ -1,14 +1,34 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
+    background: url('/header_img.png');
     background-size:contain;
     position: relative;
 }
 .header-contents{
     position: absolute;
     display: flex;
+    flex-direction: column;.header{
+    height: 100vh; /* Change height to fill the whole screen */
+    margin: 0;
+    background: url('/header_img.png') no-repeat center center fixed; /* Center the background image and make it cover the whole area */
+    background-size: cover; /* Cover the whole area */
+    position: relative;
+}
+
+/* Remove the height property from here */
+.header-contents{
+    position: absolute;
+    display: flex;
     flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
     align-items: start;
     gap: 1.5vw;
     max-width: 50%;
